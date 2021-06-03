@@ -57,7 +57,6 @@ namespace Library.App
                 }
                 Console.WriteLine();
             }
-            Console.WriteLine();
         }
 
         /*
@@ -85,7 +84,6 @@ namespace Library.App
             }
             else
                 Console.WriteLine($"\"{book.Title}\" cannot fit in shelf.");
-            Console.WriteLine();
         }
 
         /*
@@ -116,7 +114,6 @@ namespace Library.App
                 Console.WriteLine($"All instances of \"{title}\" successfully removed.");
             else
                 Console.WriteLine($"No book with the title \"{title}\" found.");
-            Console.WriteLine();
         }
 
         /*
@@ -139,7 +136,6 @@ namespace Library.App
                     break;
             }
             Console.WriteLine("Shelf " + shelfNumber + " sorted.");
-            Console.WriteLine();
         }
 
         /*
@@ -191,7 +187,6 @@ namespace Library.App
                 }
             }
             Console.WriteLine("Bookshelf completely sorted. " + lostBooks + " lost books");
-            Console.WriteLine();
         }
 
         /*
@@ -225,9 +220,6 @@ namespace Library.App
         /*
          * Compares books based on title. Used to sort the lists.
          */
-        private int CompareBook(Book book1, Book book2)
-        {
-            return book1.Title.CompareTo(book2.Title);
-        }
+        private int CompareBook(Book book1, Book book2) => book1.Title.CompareTo(book2.Title);
     }
 }
