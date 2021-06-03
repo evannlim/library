@@ -20,7 +20,6 @@ namespace Library.App
                 {
                     case "show":
                         bookshelf.ShowBookshelf();
-                        Console.WriteLine();
                         break;
                     case "add":
                         Console.WriteLine("Type in the title of the book:");
