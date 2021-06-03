@@ -51,7 +51,7 @@ namespace Library.App
                     case "exit":
                         System.Environment.Exit(0);
                         break;
-                    case default:
+                    default:
                         Console.WriteLine("That is not a command.");
                         Console.WriteLine("Commands: show, add, remove, sort shelf, sort all, exit");
                         Console.WriteLine();
