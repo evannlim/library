@@ -7,7 +7,7 @@ namespace Library.App
         static void Main(string[] args)
         {
             Bookshelf bookshelf = new Bookshelf();
-            Console.WriteLine("Welcome to your bookshelf.");
+            Console.WriteLine("Hi there, welcome to your bookshelf.");
             Console.WriteLine("Commands: show, add, remove, sort shelf, sort all, exit");
             Console.WriteLine("\n");
 
