@@ -25,7 +25,6 @@ namespace Library.App
          */
         public void ShowBookshelf()
         {
-            Console.WriteLine();
             for (int i = 1; i <= 3; i++)
             {
                 switch (i)
