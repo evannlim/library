@@ -1,6 +1,6 @@
 ﻿namespace Library.App
 {
-    class Book
+    public class Book
     {
         public string Title { get; set; }
         public int NumberOfPages { get; set; }

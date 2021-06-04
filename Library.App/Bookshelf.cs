@@ -3,14 +3,14 @@ using System.Collections.Generic;
 
 namespace Library.App
 {
-    class Bookshelf
+    public class Bookshelf
     {
-        List<Book> shelf1 = new List<Book>();
-        List<Book> shelf2 = new List<Book>();
-        List<Book> shelf3 = new List<Book>();
+        private List<Book> shelf1 = new List<Book>();
+        private List<Book> shelf2 = new List<Book>();
+        private List<Book> shelf3 = new List<Book>();
 
         //Represents how many pages one shelf can fit.
-        int NumberPages;
+        private int NumberPages;
 
         /*
          * Constructor for the bookshelf. Sets the number of pages a shelf can hold.
@@ -19,6 +19,12 @@ namespace Library.App
         {
             this.NumberPages = NumberPages;
         }
+
+        public List<Book> GetShelf1() => shelf1;
+
+        public List<Book> GetShelf2() => shelf2;
+
+        public List<Book> GetShelf3() => shelf3;
 
         /*
          * Displays the entire bookshelf in the console.
